@@ -1,4 +1,4 @@
-package xyz.waiphyoag.padc_3_f_wpa_mm_news;
+package xyz.waiphyoag.news.activities;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -8,6 +8,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import xyz.waiphyoag.news.R;
+import xyz.waiphyoag.news.activities.*;
 
 public class MainActivity extends AppCompatActivity {
 
