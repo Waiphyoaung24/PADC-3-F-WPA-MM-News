@@ -5,6 +5,8 @@ import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 
 
@@ -29,6 +31,7 @@ public class NewsByCategoryActivity extends AppCompatActivity {
     Toolbar toolbar;
     @BindView(R.id.vp_news_by_category)
     ViewPager vpnewsbycategory;
+
 
 
     @Override
@@ -56,6 +59,10 @@ public class NewsByCategoryActivity extends AppCompatActivity {
 
 
             vpnewsbycategory.setOffscreenPageLimit(mNewsByCategoryAdapter.getCount());
+
+
+
+
 
         }
 

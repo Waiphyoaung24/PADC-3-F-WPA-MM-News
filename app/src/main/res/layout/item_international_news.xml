@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <TextView
+            android:id="@+id/tv_headlines"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/opensans_regular"
+            android:text="headlines"
+            android:textColor="@color/primary"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_time_stamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="9dp"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/ic_access_time_black_24dp"
+            android:drawablePadding="4dp"
+            android:text="11:34 PM"
+            android:textColor="@color/secondary_text"
+            android:textSize="12sp" />
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp">
+
+                <FrameLayout
+                    android:id="@+id/fl_headlines_news"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FF810041">
+
+                    <TextView
+                        android:id="@+id/tv_headline_news"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:alpha="0.5"
+                        android:fontFamily="@font/opensans_regular"
+                        android:padding="10dp"
+                        android:text="Tunisia protest / Authorities accused of indiscriminate crackdown"
+                        android:textColor="@color/white_full"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/tv_time_stamp_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginTop="130dp"
+                        android:alpha="0.8"
+                        android:drawableLeft="@drawable/ic_access_time_white_20dp"
+                        android:fontFamily="@font/opensans_regular"
+                        android:text="25m"
+                        android:textColor="@color/white_full" />
+                </FrameLayout>
+
+                <ImageView
+                    android:id="@+id/iv_headline_news"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_below="@id/fl_headlines_news"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_headlines_news" />
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv_news_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_headline_news"
+                    android:layout_marginRight="200dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_international_news_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/opensans_regular"
+                        android:padding="10dp"
+                        android:text="Tunisia protest / Authorities accused of indiscriminate crackdown"
+                        android:textColor="@color/primary_text"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_time_stamp_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="98dp"
+                        android:alpha="0.9"
+                        android:drawableLeft="@drawable/ic_access_time_black_24dp"
+                        android:drawablePadding="2dp"
+                        android:text="1hr"
+                        android:textColor="@color/primary_text"
+                        android:textSize="12sp" />
+
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv_news_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_headline_news"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        android:id="@+id/tv_international_news_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/opensans_regular"
+                        android:text="Countinho / Barcelone Transfer from Liverpool $100,00 weekly salary starting from 15th Jan"
+                        android:textColor="@color/primary_text"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_time_stamp_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="98dp"
+                        android:alpha="0.9"
+                        android:drawableLeft="@drawable/ic_access_time_black_24dp"
+                        android:drawablePadding="2dp"
+                        android:text="1hr"
+                        android:textColor="@color/primary_text"
+                        android:textSize="12sp" />
+
+
+                </android.support.v7.widget.CardView>
+
+                <ImageView
+                    android:id="@+id/iv_local_news_1"
+                    android:layout_width="196dp"
+                    android:layout_height="140dp"
+                    android:layout_below="@id/cv_news_1"
+                    android:layout_marginRight="4dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_international_news1" />
+
+                <ImageView
+                    android:id="@+id/iv_local_news_2"
+                    android:layout_width="198dp"
+                    android:layout_height="140dp"
+                    android:layout_below="@id/cv_news_2"
+                    android:layout_toRightOf="@id/iv_local_news_1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_international_news1" />
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv_local_news_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_local_news_1"
+                    android:layout_margin="8dp"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        android:id="@+id/divider_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/primary"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:alpha="0.7"
+                        android:fontFamily="@font/opensans_regular"
+                        android:text="UK News / Farage's call for second Brexit vote greeted with glee by remainers "
+                        android:textColor="@color/primary_text"
+                        android:textSize="18sp" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv_local_news_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cv_local_news_3"
+                    android:layout_margin="8dp"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        android:id="@+id/divider_7"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/primary"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:fontFamily="@font/opensans_regular"
+                        android:alpha="0.7"
+                        android:text="UK News / Farage's call for second Brexit vote greeted with glee by remainers "
+                        android:textColor="@color/primary_text"
+                        android:textSize="18sp" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv_local_news_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cv_local_news_4"
+                    android:layout_margin="8dp"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        android:id="@+id/divider_8"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/primary"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:alpha="0.7"
+                        android:fontFamily="@font/opensans_regular"
+                        android:text="UK News / Farage's call for second Brexit vote greeted with glee by remainers "
+                        android:textColor="@color/primary_text"
+                        android:textSize="18sp" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv_local_news_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cv_local_news_5"
+                    android:layout_margin="8dp"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        android:id="@+id/divider_9"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/primary"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:fontFamily="@font/opensans_regular"
+                        android:alpha="0.7"
+                        android:text="UK News / Farage's call for second Brexit vote greeted with glee by remainers "
+                        android:textColor="@color/primary_text"
+                        android:textSize="18sp" />
+                </android.support.v7.widget.CardView>
+
+
+            </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</ScrollView>
